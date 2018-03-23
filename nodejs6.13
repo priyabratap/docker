@@ -66,3 +66,4 @@ RUN set -ex \
   && npm install forever -g
 
 CMD [ "node" ]
+CMD ["forever", "/var/www/html/test/app.js", "80"]
